@@ -8,12 +8,12 @@ Class QuadraticEquation extends LinearEquation implements EquationInterface{
 		return ($b**2)-4*$a*$c;
 		}
 	
-	public function qu_solve(float $a, float $b, float $c): array {
+	public function solve(float $a, float $b, float $c): array {
 
 		$x = $this->dis($a, $b, $c);
 
 	    if($a == 0){
-	        return $this->solve($b,$c);
+	        return $this->solveLinearEquation($b,$c);
 	    }
         \levkina\MyLog::log("Определено, что это квадратное уравнение");
 		if ($x > 0){
