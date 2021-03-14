@@ -6,18 +6,18 @@ use core\LogInterface;
 
 Class MyLog extends LogAbstract implements LogInterface {
 
-    public function _log(String $str){
+    public function _log(String $str): void {
         $this->log[]=$str;
     }
 
     /**
      * @param String $str строка для записи в массив лога
      */
-    public static function log(String $str){
+    public static function log(String $str): void {
         self::Instance()->_log($str);
 	}
     
-    public function _write(){
+    public function _write(): void {
 		
 $log='';
         if (!is_dir("log")) {
@@ -35,7 +35,7 @@ $log='';
         
     }
     
-    public static function write(){
+    public static function write(): void {
         self::Instance()->_write();
     }
 

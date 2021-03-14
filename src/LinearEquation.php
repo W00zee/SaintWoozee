@@ -1,7 +1,7 @@
 <?php namespace levkina;
 
 Class LinearEquation{
-	public function solve($a, $b){
+	public function solve(float $a, float $b): array {
 			
 			if($a == 0){
                 throw new LevkinaException("Ошибка: уравнения не существует.");
