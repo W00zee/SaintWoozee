@@ -24,7 +24,7 @@ $log='';
             mkdir("log");
         }
 
-        foreach (LevkinaLog::$i->log as $value) {
+        foreach ($this->log as $value) {
             $log .= $value."\n\r";
         }
         echo $log;
