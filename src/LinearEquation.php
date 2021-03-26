@@ -6,7 +6,7 @@ Class LinearEquation{
 			if($a == 0){
                 throw new LevkinaException("Ошибка: уравнения не существует.");
 			}
-            \levkina\MyLog::log("Определено, что это линейное уравнение");
+			
 			return $this->X=array(-($b/$a));
 	}
 	

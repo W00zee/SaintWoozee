@@ -15,7 +15,7 @@ Class QuadraticEquation extends LinearEquation implements EquationInterface{
 	    if($a == 0){
 	        return $this->solveLinearEquation($b,$c);
 	    }
-        \levkina\MyLog::log("Определено, что это квадратное уравнение");
+		
 		if ($x > 0){
 		    return $this->X=array(
 		        (-$b+sqrt($x))/(2*$a),
